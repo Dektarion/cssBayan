@@ -23,6 +23,11 @@
 .main {
   display: flex;
   flex-direction: column;
+  color: rgb(67, 111, 255);
+}
+
+.main:hover {
+  color: black;
 }
 
 .main__div-first {
@@ -48,4 +53,11 @@
 
 .main__img-plus {
   width: 18px;
+}
+
+.main__img-meme {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
