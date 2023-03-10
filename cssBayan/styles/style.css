@@ -46,13 +46,23 @@
   display: none;
 }
 
+input:checked ~ img {
+  transform: rotate(45deg);
+}
+
 .main__label-text {
   font-family: 'Fredoka One', cursive;
   font-size: 1.5em;
 }
 
 .main__img-plus {
+  visibility: hidden;
   width: 18px;
+  transition: 0.4s;
+}
+
+.main:hover .main__img-plus {
+  visibility: visible;
 }
 
 .main__img-meme {
