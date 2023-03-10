@@ -47,7 +47,7 @@
 }
 
 .main__input {
-  display: none;
+  /* display: none; */
   grid-row: 1 / 2;
   grid-column: 1 / 2;
 }
