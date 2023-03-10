@@ -17,5 +17,35 @@
 }
 
 .header__h1 {
-  font-weight: 900;
+  font-family: 'Fredoka One', cursive;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__div-first {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1.5px solid rgb(199, 199, 199);
+}
+
+.main__div-second {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main__input {
+  display: none;
+}
+
+.main__label-text {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.5em;
+}
+
+.main__img-plus {
+  width: 18px;
 }
