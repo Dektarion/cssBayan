@@ -1,0 +1,100 @@
+@media screen and (min-width: 300px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .header__h1 {
+    font-size: 1.4em;
+  }
+
+  .main__div {
+    row-gap: 1rem;
+  }
+
+  .main__label-text {
+    font-size: 0.85em;
+  }
+
+  .main__img-plus {
+    width: 0.95rem;
+  }
+
+  .main__meme-img {
+    height: 12rem;
+  }
+
+  .main__img-plus {
+    visibility: visible;
+  }
+
+
+}
+
+@media screen and (min-width: 820px) {
+  .container {
+    padding: 0 4rem;
+  }
+
+  .header__h1 {
+    font-size: 1.75em;
+  }
+
+  .main__div {
+    row-gap: 1.1rem;
+  }
+
+  .main__label-text {
+    font-size: 1.2em;
+  }
+
+  .main__img-plus {
+    width: 1.1rem;
+  }
+
+  .main__meme-img {
+    height: 20rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    padding: 0 7.5rem;
+  }
+
+  .header__h1 {
+    font-size: 2em;
+  }
+
+  .main__div {
+    row-gap: 1.25rem;
+  }
+
+  .main__label-text {
+    font-size: 1.5em;
+  }
+
+  .main__img-plus {
+    width: 1.125rem;
+  }
+
+  .main__meme-img {
+    height: 22rem;
+  }
+
+  .main:hover {
+    color: black;
+  }
+
+  .main__img-plus {
+    visibility: hidden;
+  }
+
+  .main:hover .main__img-plus {
+    visibility: visible;
+  }
+
+  .main__div:hover > .main__meme-img {
+    display: block;
+  }
+
+}
