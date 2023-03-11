@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.body {
+  max-width: 90rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}
+
+.container {
+  padding: 0 7.5rem;
+}
+
+.header__h1 {
+  font-family: 'Fredoka One', cursive;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  color: rgb(67, 111, 255);
+  cursor: pointer;
+}
+
+.main__div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 0.1rem solid rgb(199, 199, 199);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main__input {
+  display: none;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.main__label-text {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.5em;
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+  cursor: pointer;
+}
+
+.main__img-plus {
+  /* visibility: hidden; */
+  width: 1.125rem;
+  grid-row: 1 / 2;
+  grid-column: 3 / 3;
+  justify-self: end;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.main__meme-img {
+  display: none;
+  height: 22rem;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  cursor: pointer;
+  animation: show 1.0s forwards;
+}
+
+@keyframes show {
+  0% {scale: 0.3;}
+  100% {scale: 1.0;}
+}
+
+input:checked ~ .main__img-plus {
+  transform: rotate(45deg);
+}
+
+input:checked ~ .main__label-text {
+  color: black;
+}
+
+input:checked ~ .main__meme-img {
+  display: block;
+}
+
+.main__div:active > .main__label-text {
+  color: rgb(67, 111, 255);
+}
+
+.main__div:active > .main__meme-img {
+  filter: opacity(0.7);
+}
+
